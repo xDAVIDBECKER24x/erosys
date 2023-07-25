@@ -113,6 +113,7 @@
     .process-container {
         background-color: #171717;
         overflow: hidden;
+        text-align: left;
     }
     
     .card {
@@ -244,7 +245,22 @@
     .about-container {
         background-color: #171717;
         color: #eee;
+    }
+    
+    .about-text-wrapper {
+        font-family: Roboto400;
+        text-align: left;
+    }
+    
+    .about-title strong {
+        color: #8257e5;
         font-family: Roboto500;
+    }
+    
+    .about-subtitle {
+        color: #EEE;
+        font-family: Roboto400;
+        font-size: 26px;
     }
 </style>
 
@@ -284,102 +300,119 @@
             </div>
         </div>
     </nav>
-    <img class="background-icon1" height="52" src="icons/logo_shadow.svg" />
+    <!-- <img class="background-icon1" height="52" src="icons/logo_shadow.svg" /> -->
     <div class="home-container px-4 py-1 my-2 mx-5 px=5 text-center">
-        <h1 class="display-9 fw-bold">
-            Transforme seu negócio com nossa Fábrica de Software!
-        </h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">
-                O time completo para desenvolver sua ideia com as tecnologias mais avançadas do mercado.
-            </p>
-        </div>
-    </div>
-    <div class="about-container px-4 py-1 my-2 px=5 text-center">
-        <div class="col-lg-6 mx-auto">
-            <div class="container">
-                <p class="lead mb-4">Imagen 1</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="service-container px-4 py-1 my-2 px=5 text-center">
-        <div class="col-lg-6 mx-auto">
-            <div class="container">
-                <p class="lead mb-4">Serviços + Imagens</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="process-container px-4 py-1 my-2 px=5 text-left">
-        <div class="container card-wrapper">
-            <div>
-                <p class="process-subtitle">Como fazemos?</p>
-                <p class="process-title">
-                    Concepção, validação,<br /> consultoria e desenvolvimento.
+        <div class="container">
+            <h1 class="display-9 fw-bold">
+                Transforme seu negócio com nossa Fábrica de Software!
+            </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    O time completo para desenvolver sua ideia com as tecnologias mais avançadas do mercado.
                 </p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md card-down">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-icon" src="icons/compass.svg" />
-                            <h5 class="card-title">STEP 1</h5>
-                            <h6 class="card-subtitle">Definição de Escopo</h6>
-                            <p class="card-text">
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
+        </div>
+
+    </div>
+    <div class="about-container  py-5 my-5  text-center">
+        <div class="col-lg-6 mx-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="container about-text-wrapper">
+                            <span class="about-title">NÓS SOMOS A <strong>EROSYS</strong></span>
+                            <br>
+                            <br>
+                            <span class="about-subtitle">Ajudamos na transformação digital de  organizações ao desenvolver soluções Web & Mobile sob medida.</span>
                         </div>
+
                     </div>
-                </div>
-                <div class="col-md card-up">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-icon" src="icons/pencil.svg" />
-                            <h5 class="card-title">STEP 2</h5>
-                            <h6 class="card-subtitle">Prototipação e Validação</h6>
-                            <p class="card-text">
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md card-down">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-icon" src="icons/code.svg" />
-                            <h5 class="card-title">STEP 3</h5>
-                            <h6 class="card-subtitle">Desenvolvimento</h6>
-                            <p class="card-text">
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md card-up">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-icon" src="icons/flag.svg" />
-                            <h5 class="card-title">STEP 4</h5>
-                            <h6 class="card-subtitle">Homologação e Entrega</h6>
-                            <p class="card-text">
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
+                    <div class="col-lg-4">
+                        <div class="container">
+                            <img src="images/girl-systems.svg" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="faq-container container px-4 py-1 my-2 px=5">
-        <div class="col-lg-6 mx-auto">
-            <p class="faq-title lead mb-4 text-center">Dúvidas Frequentes</p>
+        <div class="service-container px-5 py-5 my-2 px=5 text-center">
+            <div class="col-lg-6 mx-auto">
+                <div class="container">
+                    <p class="lead mb-4">Serviços + Imagens</p>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <center>
-                <fieldset class="text-left" id="accordion">
-                    <label>
+
+        <div class="process-container  px-5 py-5 my-2 px=5 text-left">
+            <div class="container card-wrapper">
+                <div>
+                    <p class="process-subtitle">Como fazemos?</p>
+                    <p class="process-title">
+                        Concepção, validação,<br /> consultoria e desenvolvimento.
+                    </p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md card-down">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-icon" src="icons/compass.svg" />
+                                <h5 class="card-title">STEP 1</h5>
+                                <h6 class="card-subtitle">Definição de Escopo</h6>
+                                <p class="card-text">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md card-up">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-icon" src="icons/pencil.svg" />
+                                <h5 class="card-title">STEP 2</h5>
+                                <h6 class="card-subtitle">Prototipação e Validação</h6>
+                                <p class="card-text">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md card-down">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-icon" src="icons/code.svg" />
+                                <h5 class="card-title">STEP 3</h5>
+                                <h6 class="card-subtitle">Desenvolvimento</h6>
+                                <p class="card-text">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md card-up">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-icon" src="icons/flag.svg" />
+                                <h5 class="card-title">STEP 4</h5>
+                                <h6 class="card-subtitle">Homologação e Entrega</h6>
+                                <p class="card-text">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-container container px-4 py-1 my-2 px=5">
+            <div class="col-lg-6 mx-auto">
+                <p class="faq-title lead mb-4 text-center">Dúvidas Frequentes</p>
+            </div>
+            <div class="container">
+                <center>
+                    <fieldset class="text-left" id="accordion">
+                        <label>
               <span>Qual a paleta de cores da peça de vocês?</span>
               <input type="radio" value="bar1" name="accordion" />
               <div>
@@ -392,7 +425,7 @@
                 </p>
               </div>
             </label>
-                    <label>
+                        <label>
               <span
                 >Senta no bolo e come a pica ou come a pica e senta no
                 bolo?</span
@@ -413,7 +446,7 @@
                 </p>
               </div>
             </label>
-                    <label>
+                        <label>
               <span>Daria o cu pela paz mundial?</span>
               <input type="radio" value="bar3" name="accordion" />
               <div>
@@ -426,34 +459,34 @@
                 </p>
               </div>
             </label>
-                </fieldset>
-            </center>
+                    </fieldset>
+                </center>
+            </div>
         </div>
-    </div>
 
-    <footer class="py-2 my-5">
-        <div class="footer-container container">
-            <ul class="nav justify-content-center pb-3 mb-3">
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2">About</a>
-                </li>
-            </ul>
-            <hr />
-            <p class="text-center">© 2022 Company, Inc</p>
-        </div>
-    </footer>
+        <footer class="py-2 my-5">
+            <div class="footer-container container">
+                <ul class="nav justify-content-center pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2">About</a>
+                    </li>
+                </ul>
+                <hr />
+                <p class="text-center">© 2022 Company, Inc</p>
+            </div>
+        </footer>
 </body>
 
 </html>
