@@ -65,7 +65,7 @@
     }
     
     .nav-link {
-        color: #ffffff;
+        color: #eeeeee;
         font-family: Roboto500;
     }
     
@@ -73,14 +73,18 @@
         color: #8257e5;
     }
     
+    .nav-link:active {
+        color: #8257e5;
+    }
+    
     .navbar-nav .nav-link.active {
-        color: #fff;
+        color: #eeeeee;
         font-family: Roboto700;
     }
     
     .contact-buttom {
         background-color: #8257e5;
-        color: #ffffff;
+        color: #eeeeee;
         border-radius: 8px;
     }
     
@@ -91,7 +95,7 @@
     
     .contact-buttom:visited {
         background-color: #8257e5aa;
-        color: #ffffff;
+        color: #eeeeee;
     }
     
     .contact-buttom span {
@@ -104,27 +108,29 @@
     
     .about-container {
         text-align: center;
-        background-color: #141414;
     }
     
     .process-container {
-        text-align: center;
-    }
-    
-    .footer-container {
-        color: #ffffff;
+        background-color: #171717;
+        overflow: hidden;
     }
     
     .card {
         text-align: left;
         background-color: rgba(41, 41, 46, 1);
-        color: rgba(255, 255, 255, 1);
+        color: #eeeeee;
         border-radius: 45px;
         height: 290px;
         font-family: Roboto400;
         margin-top: 24px;
         min-width: 220px;
         max-width: 290px;
+    }
+    
+    .card-wrapper {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        max-width: 1320px;
     }
     
     .card-up {
@@ -147,16 +153,98 @@
     }
     
     .card-subtitle {
-        color: rgba(255, 255, 255, 1);
+        color: #eeeeee;
         margin-top: 12px;
         font-family: Roboto700;
-        font-size: large;
+        font-size: 22px;
     }
     
     .card-text {
-        color: rgba(255, 255, 255, 1);
+        color: #eeeeee;
         margin-top: 12px;
-        font-size: small;
+        font-size: medium;
+    }
+    
+    .process-subtitle {
+        font-family: Roboto700;
+        font-size: 18px;
+        color: #8257e5aa;
+    }
+    
+    .process-title {
+        font-family: Roboto700;
+        font-size: 32px;
+    }
+    
+    .faq-container {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .faq-title {
+        font-family: Roboto700;
+        font-size: 32px;
+    }
+    
+    .footer-container {
+        color: #eeeeee;
+    }
+    
+    fieldset {
+        border: none;
+        width: 900px;
+        padding: 0;
+        overflow: hidden;
+        text-align: left;
+    }
+    
+    fieldset>label input[type="radio"] {
+        display: none;
+    }
+    
+    fieldset>label>span {
+        padding: 15px 20px;
+        display: block;
+        cursor: pointer;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: #29292e;
+        color: #eee;
+        border-radius: 10px;
+        font-family: Roboto300;
+    }
+    
+    fieldset>label>div {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: all ease-in-out 300ms;
+        overflow: hidden;
+        padding: 10px;
+    }
+    
+    fieldset>label input[type="radio"]:checked+div {
+        grid-template-rows: 1fr;
+    }
+    
+    fieldset>label>div>p {
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+        font-family: Roboto300;
+    }
+    
+    .background-icon1 {
+        position: absolute;
+        margin-left: -50px;
+        margin-top: 50px;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .about-container {
+        background-color: #171717;
+        color: #eee;
+        font-family: Roboto500;
     }
 </style>
 
@@ -196,6 +284,7 @@
             </div>
         </div>
     </nav>
+    <img class="background-icon1" height="52" src="icons/logo_shadow.svg" />
     <div class="home-container px-4 py-1 my-2 mx-5 px=5 text-center">
         <h1 class="display-9 fw-bold">
             Transforme seu negócio com nossa Fábrica de Software!
@@ -208,17 +297,31 @@
     </div>
     <div class="about-container px-4 py-1 my-2 px=5 text-center">
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">
-                O time completo para desenvolver sua ideia com as tecnologias mais avançadas do mercado.
-            </p>
+            <div class="container">
+                <p class="lead mb-4">Imagen 1</p>
+            </div>
         </div>
     </div>
-    <div class="process-container px-4 py-1 my-2 px=5 text-center">
-        <p class="lead mb-4">Metodologias</p>
+
+    <div class="service-container px-4 py-1 my-2 px=5 text-center">
+        <div class="col-lg-6 mx-auto">
+            <div class="container">
+                <p class="lead mb-4">Serviços + Imagens</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="process-container px-4 py-1 my-2 px=5 text-left">
         <div class="container card-wrapper">
+            <div>
+                <p class="process-subtitle">Como fazemos?</p>
+                <p class="process-title">
+                    Concepção, validação,<br /> consultoria e desenvolvimento.
+                </p>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-md card-down">
-                    <div class="card ">
+                    <div class="card">
                         <div class="card-body">
                             <img class="card-icon" src="icons/compass.svg" />
                             <h5 class="card-title">STEP 1</h5>
@@ -242,7 +345,7 @@
                     </div>
                 </div>
                 <div class="col-md card-down">
-                    <div class="card ">
+                    <div class="card">
                         <div class="card-body">
                             <img class="card-icon" src="icons/code.svg" />
                             <h5 class="card-title">STEP 3</h5>
@@ -254,7 +357,7 @@
                     </div>
                 </div>
                 <div class="col-md card-up">
-                    <div class="card ">
+                    <div class="card">
                         <div class="card-body">
                             <img class="card-icon" src="icons/flag.svg" />
                             <h5 class="card-title">STEP 4</h5>
@@ -266,35 +369,91 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div class="faq-container container px-4 py-1 my-2 px=5">
+        <div class="col-lg-6 mx-auto">
+            <p class="faq-title lead mb-4 text-center">Dúvidas Frequentes</p>
         </div>
-        <div class="process-container px-4 py-1 my-2 px=5 text-center">
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Dúvidas</p>
-            </div>
+        <div class="container">
+            <center>
+                <fieldset class="text-left" id="accordion">
+                    <label>
+              <span>Qual a paleta de cores da peça de vocês?</span>
+              <input type="radio" value="bar1" name="accordion" />
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Labore impedit ducimus sequi quis voluptatem id aliquid quod
+                  distinctio, maiores iste eos fugiat aliquam minima sed?
+                  Numquam tempora, quaerat illo error deserunt ad, possimus
+                  repudiandae tempore corporis eaque magnam consequuntur nisi?
+                </p>
+              </div>
+            </label>
+                    <label>
+              <span
+                >Senta no bolo e come a pica ou come a pica e senta no
+                bolo?</span
+              >
+              <input type="radio" value="bar2" name="accordion" />
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Labore impedit ducimus sequi quis voluptatem id aliquid quod
+                  distinctio, maiores iste eos fugiat aliquam minima sed?
+                  Numquam tempora, quaerat illo error deserunt ad, possimus
+                  repudiandae tempore corporis eaque magnam consequuntur nisi?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Labore impedit ducimus sequi quis voluptatem id aliquid quod
+                  distinctio, maiores iste eos fugiat aliquam minima sed?
+                  Numquam tempora, quaerat illo error deserunt ad, possimus
+                  repudiandae tempore corporis eaque magnam consequuntur nisi?
+                </p>
+              </div>
+            </label>
+                    <label>
+              <span>Daria o cu pela paz mundial?</span>
+              <input type="radio" value="bar3" name="accordion" />
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Labore impedit ducimus sequi quis voluptatem id aliquid quod
+                  distinctio, maiores iste eos fugiat aliquam minima sed?
+                  Numquam tempora, quaerat illo error deserunt ad, possimus
+                  repudiandae tempore corporis eaque magnam consequuntur nisi?
+                </p>
+              </div>
+            </label>
+                </fieldset>
+            </center>
         </div>
-        <footer class="py-2 my-5">
-            <div class="footer-container container">
-                <ul class="nav justify-content-center pb-3 mb-3">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">About</a>
-                    </li>
-                </ul>
-                <p class="text-center text-muted">© 2022 Company, Inc</p>
-            </div>
-        </footer>
+    </div>
+
+    <footer class="py-2 my-5">
+        <div class="footer-container container">
+            <ul class="nav justify-content-center pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2">About</a>
+                </li>
+            </ul>
+            <hr />
+            <p class="text-center">© 2022 Company, Inc</p>
+        </div>
+    </footer>
 </body>
 
 </html>
