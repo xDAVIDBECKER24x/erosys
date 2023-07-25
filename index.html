@@ -229,15 +229,8 @@
         font-family: Roboto300;
     }
     
-    .background-icon1 {
-        position: absolute;
-        margin-left: -50px;
-        margin-top: 50px;
-        width: 500px;
-        height: 500px;
-    }
-    
     .about-container {
+        z-index: 8;
         background-color: #171717;
         color: #eee;
     }
@@ -274,7 +267,7 @@
         color: #eeeeee;
         border-radius: 45px;
         font-family: Roboto400;
-        margin: auto;
+        margin: 24px;
         padding: auto;
         min-height: 240px;
         min-width: 540px;
@@ -282,6 +275,8 @@
     }
     
     .card-service-title {
+        margin-bottom: 8px;
+        margin-top: -16px;
         font-family: Roboto700;
         font-size: xx-large;
         color: #eeeeee;
@@ -296,9 +291,41 @@
     .card-serice img {
         margin: auto;
     }
+    
+    .home-title {
+        text-shadow: 4px 4px #333333;
+        font-family: Roboto700;
+        font-size: 64px;
+        margin: 12px;
+    }
+    
+    .home-subtitle {
+        font-family: Roboto300;
+    }
+    
+    .background-icon {
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        opacity: 0.8;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .bg-icon1 {}
+    
+    .bg-icon2 {
+        float: right;
+        margin-right: -1000px;
+        width: 900px;
+    }
 </style>
 
 <body>
+    <div class="background-icon">
+        <!-- <img class=" bg-icon1" src="icons/logo_shadow.svg" /> -->
+        <!-- <img class="background-icon bg-icon2" src="icons/logo_shadow.svg" /> -->
+    </div>
     <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
         <div class="container">
             <img height="52" class="navbar-brand d-flex w-50 me-auto" src="images/logo.svg" alt="logo icon" />
@@ -334,20 +361,18 @@
             </div>
         </div>
     </nav>
-    <!-- <img class="background-icon1" height="52" src="icons/logo_shadow.svg" /> -->
-    <div class="home-container px-4 py-1 my-2 mx-5 px=5 text-center">
-        <div class="container">
-            <h1 class="display-9 fw-bold">
-                Transforme seu negócio com nossa Fábrica de Software!
+    <div class="home-container px-4 py-5 my-2 mx-5 px-5 text-center">
+        <div class="col-lg-8 mx-auto container animate__animated animate__fadeInDown animate__delay-1.5s">
+            <h1 class="home-title ">
+                Transforme seu negócio com <br>nossa Fábrica de Software!
             </h1>
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">
+                <p class="lead mb-4 home-subtitle">
                     O time completo para desenvolver sua ideia com as tecnologias mais avançadas do mercado.
                 </p>
             </div>
 
         </div>
-
     </div>
     <div class="about-container  py-5 my-5  text-center">
         <div class="col-lg-8 mx-auto">
@@ -375,7 +400,7 @@
         <div class="col-lg-8 mx-auto">
             <div class="row">
                 <div class="col-md">
-                    <div class="card card-service mb-3">
+                    <div class="card card-service mb-3 animate__animated animate__fadeInLeft animate__delay-1.5s">
                         <div class="row px-3 flex-fill align-items-center no-gutters">
                             <div class="col-md-4">
                                 <img src="images/dev_mobile.svg" class="card-img">
@@ -390,8 +415,8 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card card-service mb-3">
-                        <div class="row px-3 flex-fill align-items-center no-gutters">
+                    <div class="card card-service mb-3 animate__animated animate__fadeInRight animate__delay-1.5s">
+                        <div class="row px-3 flex-fill align-items-center no-gutters ">
                             <div class="col-md-4">
                                 <img src="images/guy_notebook.svg" class="card-img">
                             </div>
@@ -405,8 +430,8 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card card-service mb-3">
-                        <div class="row px-3 flex-fill align-items-center no-gutters">
+                    <div class="card card-service mb-3 animate__animated animate__fadeInLeft animate__delay-1.5s">
+                        <div class="row px-3 flex-fill align-items-center no-gutters ">
                             <div class="col-md-4">
                                 <img src="images/integration.svg" class="card-img">
                             </div>
@@ -420,8 +445,8 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card card-service mb-3">
-                        <div class="row px-3 flex-fill align-items-center no-gutters">
+                    <div class="card card-service mb-3 animate__animated animate__fadeInRight animate__delay-1.5s">
+                        <div class="row px-3 flex-fill align-items-center no-gutters ">
                             <div class="col-md-4">
                                 <img src="images/web_design.svg" class="card-img">
                             </div>
