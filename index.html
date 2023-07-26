@@ -259,13 +259,14 @@
     
     .service-container {
         color: #eee;
+        background-image: url("images/background_faded.svg");
     }
     
     .title-service {
         text-align: center;
         color: #eee;
-        font-family: Roboto700;
-        font-size: 32px;
+        font-family: Roboto400;
+        font-size: 38px;
     }
     
     .card-service {
@@ -276,16 +277,16 @@
         font-family: Roboto400;
         margin: 24px;
         padding: auto;
-        min-height: 240px;
-        min-width: 540px;
-        min-width: 540px;
+        min-height: 180px;
+        width: 440px;
     }
     
     .card-service-title {
         margin-bottom: 8px;
         margin-top: -16px;
+        padding: 8px;
         font-family: Roboto700;
-        font-size: xx-large;
+        font-size: large;
         color: #eeeeee;
     }
     
@@ -295,8 +296,10 @@
         color: #BBBBBB;
     }
     
-    .card-serice img {
+    .service-ilustration {
         margin: auto;
+        min-height: 100px;
+        max-height: 120px;
     }
     
     .home-title {
@@ -315,22 +318,35 @@
         overflow: hidden;
         z-index: -1;
         opacity: 0.8;
-        height: auto;
-        max-width: 100%;
+    }
+    
+    .bg-icon1 {
+        margin-left: -50px;
+        margin-top: 100px;
     }
     
     .bg-icon2 {
-        float: right;
-        margin-right: -1000px;
-        width: 900px;
+        margin-right: -50px;
+        margin-top: -150px;
+    }
+    
+    .bg-icon2 {
+        margin-right: -50px;
+        margin-top: -50px;
+    }
+    
+    .bg-icon3 {
+        margin-right: -50px;
+        margin-top: 300px;
+    }
+    
+    .home-container {
+        background-image: url("images/background_home.svg");
     }
 </style>
 
 <body>
-    <div class="background-icon">
-        <!-- <img class=" bg-icon1" src="icons/logo_shadow.svg" /> -->
-        <!-- <img class="background-icon bg-icon2" src="icons/logo_shadow.svg" /> -->
-    </div>
+
     <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
         <div class="container">
             <img height="52" class="navbar-brand d-flex w-50 me-auto" src="images/logo.svg" alt="logo icon" />
@@ -366,7 +382,13 @@
             </div>
         </div>
     </nav>
-    <div class="home-container  py-5  mx-1 text-center">
+    <div class="home-container  py-5 px-5  text-center">
+        <div class="background-icon">
+            <!-- <img class=" bg-icon1" src="icons/logo_shadow.svg" /> -->
+
+            <!-- <img class=" bg-icon2" src="icons/logo_faded.svg" /> -->
+            <!-- <img class="background-icon bg-icon2" src="icons/logo_shadow.svg" /> -->
+        </div>
         <div class="col-lg-8 mx-auto container animate__animated animate__fadeInDown animate__delay-1.5s">
             <h1 class="home-title ">
                 Transforme seu negócio com <br>nossa Fábrica de Software!
@@ -379,7 +401,7 @@
 
         </div>
     </div>
-    <div class="about-container  py-4 my-4  text-center">
+    <div class="about-container py-5  text-center">
         <div class="col-lg-8 mx-auto">
             <div class="container">
                 <div class="row">
@@ -401,30 +423,30 @@
             </div>
         </div>
     </div>
-    <div class="service-container px-5 py-2 my-2 text-center">
-        <div class="col-lg-8 mx-auto">
+    <div class="service-container px-5 py-2 my-2 text-center ">
+        <div class="col-lg-10 mx-auto ">
             <span class="title-service">O que nós oferecemos?</span>
-            <div class="row">
-                <div class="col-md">
+            <div class="row ">
+                <div class="col-md d-flex justify-content-center">
                     <div class="card card-service mb-3 animate__animated animate__fadeInLeft animate__delay-1.5s">
                         <div class="row px-3 flex-fill align-items-center no-gutters">
                             <div class="col-md-4">
-                                <img src="images/dev_mobile.svg" class="card-img">
+                                <img src="images/dev_mobile.svg" class="service-ilustration card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title card-service-title">Criação de Apps Mobile</h5>
-                                    <p class="card-text card-service-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p class="card-text card-service-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md d-flex justify-content-center">
                     <div class="card card-service mb-3 animate__animated animate__fadeInRight animate__delay-1.5s">
                         <div class="row px-3 flex-fill align-items-center no-gutters ">
                             <div class="col-md-4">
-                                <img src="images/guy_notebook.svg" class="card-img">
+                                <img src="images/guy_notebook.svg" class=" service-ilustration card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -435,31 +457,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md d-flex justify-content-center">
                     <div class="card card-service mb-3 animate__animated animate__fadeInLeft animate__delay-1.5s">
                         <div class="row px-3 flex-fill align-items-center no-gutters ">
                             <div class="col-md-4">
-                                <img src="images/integration.svg" class="card-img">
+                                <img src="images/integration.svg" class="service-ilustration card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title card-service-title">Integração de Sistemas</h5>
-                                    <p class="card-text card-service-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p class="card-text card-service-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md d-flex justify-content-center">
                     <div class="card card-service mb-3 animate__animated animate__fadeInRight animate__delay-1.5s">
                         <div class="row px-3 flex-fill align-items-center no-gutters ">
                             <div class="col-md-4">
-                                <img src="images/web_design.svg" class="card-img">
+                                <img src="images/web_design.svg" class="service-ilustration card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title card-service-title">Design de Web Pages</h5>
-                                    <p class="card-text card-service-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p class="card-text card-service-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                             </div>
                         </div>
@@ -479,7 +501,7 @@
                 Concepção, validação,<br /> consultoria e desenvolvimento.
             </p>
             <div class="row">
-                <div class="col-md card-down">
+                <div class="col-md card-down d-flex justify-content-center">
                     <div class="card card-process">
                         <div class="card-body">
                             <img class="card-icon" src="icons/compass.svg" />
@@ -491,8 +513,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md card-up">
-                    <div class="card card-process">
+                <div class="col-md card-up d-flex justify-content-center">
+                    <div class="card card-process ">
                         <div class="card-body">
                             <img class="card-icon" src="icons/pencil.svg" />
                             <h5 class="card-title">STEP 2</h5>
@@ -503,7 +525,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md card-down">
+                <div class="col-md card-down d-flex justify-content-center">
                     <div class="card card-process">
                         <div class="card-body">
                             <img class="card-icon" src="icons/code.svg" />
@@ -515,7 +537,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md card-up">
+                <div class="col-md card-up d-flex justify-content-center">
                     <div class="card card-process">
                         <div class="card-body">
                             <img class="card-icon" src="icons/flag.svg" />
@@ -610,7 +632,7 @@
                 </li>
             </ul>
             <hr />
-            <p class="text-center">© 2022 Company, Inc</p>
+            <p class="text-center">© 2023 Erosys</p>
         </div>
     </footer>
 </body>
