@@ -93,8 +93,28 @@
         border-radius: 8px;
     }
     
-    .contact-buttom:hover {
+    .home-buttom {
+        background-color: #8257e5;
+        color: #eeeeee;
+        border-radius: 45px;
+        position: absolute;
+        margin-top: -22px;
+    }
+    
+    .home-buttom:hover {
         background-color: #8257e5aa;
+        color: #eeeeee;
+        border-radius: 45px;
+        position: absolute;
+        margin-top: -22px;
+    }
+    
+    .home-button-container {
+        margin-bottom: 2px;
+    }
+    
+    .contact-buttom:hover {
+        background-color: #8257e5;
         color: #eeeeee;
     }
     
@@ -470,10 +490,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#services">Soluções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Soluções</a>
+                        <a class="nav-link" href="#process">Sobre</a>
                     </li>
                 </ul>
                 <div class="nav navbar-nav ms-auto w-100 justify-content-end">
@@ -529,7 +549,7 @@
             </div>
         </div>
     </div>
-    <div class="service-container px-5 py-2 text-center ">
+    <div id="services" class="service-container px-5 py-2 text-center ">
         <div class="col-lg-10 mx-auto ">
             <span class="title-service">O que nós oferecemos?</span>
             <div class="row ">
@@ -600,7 +620,7 @@
 
     </div>
 
-    <div class="process-container  px-5 py-5   text-left">
+    <div id="process" class="process-container  px-5 py-5   text-left">
         <div class="col-lg-8 mx-auto card-wrapper">
             <p class="process-subtitle">Como fazemos?</p>
             <p class="process-title">
@@ -687,7 +707,9 @@
             </ul>
         </div>
     </div>
-
+    <div class="home-button-container d-flex justify-content-center">
+        <a class=" btn home-buttom" href="#" type="button"><img height="32px" src="icons/arrow_up.svg" /></a>
+    </div>
     <footer class="py-2 my-5">
         <div class="footer-container container">
             <ul class="nav justify-content-center pb-3 mb-3">
